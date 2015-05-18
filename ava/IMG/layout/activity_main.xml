@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/main_patternbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.neowiz.pmang.avasupplysection.MainActivity">
+
+    <include
+        android:id="@+id/main_title_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        layout="@layout/activity_title" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_marginTop="@dimen/title_height"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/main_menu_container"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_height"
+        layout="@layout/activity_menu" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/main_tutorial_view" />
+
+    <fragment
+        android:name="com.neowiz.pmang.avasupplysection.LoginFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_login"/>
+
+</RelativeLayout>

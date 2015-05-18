@@ -1,0 +1,84 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup"
+    android:background="@color/popup_background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/popup_bg"
+            android:background="@drawable/popup_bg"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/popup_close"
+            android:src="@drawable/popup_close"
+            android:background="@android:color/transparent"
+            android:layout_alignTop="@+id/popup_bg"
+            android:layout_alignRight="@+id/popup_bg"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:visibility="invisible"
+                android:src="@drawable/popup_invisible_line"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/popup_title"
+                android:text="아이템 받기 완료"
+                android:textStyle="bold"
+                android:textColor="@color/popup_title_color"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/popup_desc"
+                android:text="오늘의 아이템과 APP NAME 다운로드 보상인 30만 캣을오늘의 아이템과 APP NAME 다운로드 보상인 30만 캣을 30만 캣을오늘의 아이템과 APP NAME 다운로드 보상인 30만 캣을30만 캣을오늘의 아이템과 APP NAME 다운로드 보상인 30만 캣을"
+                android:textStyle="bold"
+                android:textColor="@color/popup_desc_color"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:layout_below="@+id/popup_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:lines="2"
+                android:maxLines="2"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+                <ImageButton
+                android:id="@+id/popup_btn"
+                android:src="@drawable/popup_btn_confirm_txt"
+                android:background="@drawable/popup_btn_confirm_bg"
+                android:layout_gravity="center"
+                android:layout_width="136dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

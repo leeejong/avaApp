@@ -1,0 +1,75 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/menu_height">
+
+    <View
+        android:background="@color/menu_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/menu_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/menu_main"
+            android:src="@drawable/menu_01"
+            android:background="@drawable/menu_item_bg"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="onClickHandler" />
+
+        <View
+            android:background="@color/menu_split_line_color"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/menu_reward"
+            android:src="@drawable/menu_02"
+            android:background="@drawable/menu_item_bg"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="onClickHandler" />
+
+        <View
+            android:background="@color/menu_split_line_color"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/menu_news"
+                android:src="@drawable/menu_03"
+                android:background="@drawable/menu_item_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClickHandler" />
+
+            <ImageView
+                android:id="@+id/menu_icon_new"
+                android:src="@drawable/common_new"
+                android:scaleX="0"
+                android:scaleY="0"
+                android:paddingLeft="40dp"
+                android:paddingBottom="25dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

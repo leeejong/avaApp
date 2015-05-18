@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/news_bar_contents_height">
+
+    <ImageView
+        android:id="@+id/news_spinner_title"
+        android:src="@drawable/news_list_total"
+        android:paddingLeft="@dimen/news_padding"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:src="@drawable/news_list_bullet"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/news_line_color"
+        android:layout_width="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

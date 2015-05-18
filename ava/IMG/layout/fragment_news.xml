@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.neowiz.pmang.avasupplysection.NewsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/news_bar_height">
+
+            <View
+                android:background="@color/news_line_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/news_bar_contents_height">
+
+                    <Spinner
+                        android:id="@+id/news_spinner"
+                        android:prompt="@array/news_sort"
+                        android:background="@android:color/transparent"
+                        android:popupBackground="@color/news_line_color"
+                        android:dropDownVerticalOffset="-48dp"
+                        android:spinnerMode="dropdown"
+                        android:dropDownWidth="195dp"
+                        android:layout_width="195dp"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:paddingRight="@dimen/news_padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/news_bar_contents_height">
+
+                    <ImageView
+                        android:src="@drawable/news_btn_all_news_delete"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_all_del" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:background="@color/news_line_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/news_listview"
+        android:divider="@color/news_list_divider_color"
+        android:dividerHeight="1dp"
+        android:layout_below="@+id/news_list_column"
+        android:layout_marginTop="@dimen/news_bar_height"
+        android:layout_marginBottom="@dimen/menu_height"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/news_listview_nodata"
+        android:layout_marginTop="@dimen/news_bar_height"
+        android:layout_marginBottom="@dimen/menu_height"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/news_nodata_img"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</FrameLayout>

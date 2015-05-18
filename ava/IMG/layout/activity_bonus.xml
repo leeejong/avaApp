@@ -1,0 +1,369 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bonus"
+    android:background="@color/bonus_background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/bonus_container"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bonus_bg"
+            android:src="@drawable/bonus_bg"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/bonus_box_effect"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bonus_box_effect1"
+                android:src="@drawable/bonus_item_light_effect1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bonus_box_a_container"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/bonus_sub_title"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/bonus_box_a"
+                android:src="@drawable/bonus_box_a_normal"
+                android:background="@android:color/transparent"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/bonus_box_a_dimed"
+                android:src="@drawable/bonus_box_a_dimed"
+                android:visibility="invisible"
+                android:alpha="0"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/bonus_box_a_pressed"
+                android:visibility="invisible"
+                android:alpha="0"
+                android:src="@drawable/bonus_box_a_pressed"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <RelativeLayout
+                android:id="@+id/bonus_box_a_reward"
+                android:alpha="0"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/main_item_back_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/bonus_box_a_reward_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/main_item_img_size"
+                    android:layout_height="@dimen/main_item_img_size" />
+
+                <ImageView
+                    android:src="@drawable/main_item_front_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/bonus_box_a_reward_effect"
+                    android:src="@drawable/bonus_item_line_effect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/bonus_box_a_reward_dimed"
+                    android:src="@drawable/bonus_item_dimed"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/bonus_box_b_container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="-145dp"
+            android:layout_marginTop="-60dp"
+            android:layout_below="@+id/bonus_box_a_container"
+            android:layout_toLeftOf="@+id/bonus_box_a_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/bonus_box_b"
+                android:src="@drawable/bonus_box_b_normal"
+                android:background="@android:color/transparent"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/bonus_box_b_dimed"
+                android:src="@drawable/bonus_box_b_dimed"
+                android:visibility="invisible"
+                android:alpha="0"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/bonus_box_b_pressed"
+                android:visibility="invisible"
+                android:alpha="0"
+                android:src="@drawable/bonus_box_b_pressed"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/bonus_box_b_reward"
+                android:alpha="0"
+                android:paddingRight="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/main_item_back_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/bonus_box_b_reward_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="@dimen/main_item_img_size"
+                        android:layout_height="@dimen/main_item_img_size" />
+
+                    <ImageView
+                        android:src="@drawable/main_item_front_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/bonus_box_b_reward_effect"
+                        android:src="@drawable/bonus_item_line_effect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/bonus_box_b_reward_dimed"
+                        android:src="@drawable/bonus_item_dimed"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bonus_box_c_container"
+            android:layout_marginLeft="-135dp"
+            android:layout_marginTop="-55.5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/bonus_box_a_container"
+            android:layout_below="@+id/bonus_box_a_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/bonus_box_c"
+                android:src="@drawable/bonus_box_c_normal"
+                android:background="@android:color/transparent"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/bonus_box_c_dimed"
+                android:src="@drawable/bonus_box_c_dimed"
+                android:visibility="invisible"
+                android:alpha="0"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/bonus_box_c_pressed"
+                android:visibility="invisible"
+                android:alpha="0"
+                android:src="@drawable/bonus_box_c_pressed"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/bonus_box_c_reward"
+                android:alpha="0"
+                android:paddingLeft="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/main_item_back_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/bonus_box_c_reward_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="@dimen/main_item_img_size"
+                        android:layout_height="@dimen/main_item_img_size" />
+
+                    <ImageView
+                        android:src="@drawable/main_item_front_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/bonus_box_c_reward_effect"
+                        android:src="@drawable/bonus_item_line_effect"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/bonus_box_c_reward_dimed"
+                        android:src="@drawable/bonus_item_dimed"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bonus_complete_message"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/bonus_box_b_container"
+            android:layout_marginTop="-25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bonus_reward_text1"
+                android:text="아이템3이름아이템3"
+                android:textColor="#d0a627"
+                android:textSize="@dimen/bonus_reward_textsize"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="을 보관함으로 발송하였습니다."
+                android:id="@+id/bonus_reward_text2"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/bonus_reward_textsize"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/popup_close"
+            android:src="@drawable/popup_close"
+            android:background="@android:color/transparent"
+            android:layout_alignTop="@+id/bonus_bg"
+            android:layout_alignRight="@+id/bonus_bg"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/bonus_main_title"
+            android:src="@drawable/bonus_main_title"
+            android:layout_marginTop="57dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/bonus_sub_title"
+            android:src="@drawable/bonus_sub_title"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/bonus_main_title"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

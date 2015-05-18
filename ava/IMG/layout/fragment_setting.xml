@@ -1,0 +1,356 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.neowiz.pmang.avasupplysection.SettingFragment">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <FrameLayout
+                android:background="@color/setting_tab_color"
+                android:paddingLeft="@dimen/setting_tap_padding"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_tap_height">
+
+                <ImageView
+                    android:src="@drawable/setting_myinfo_title"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp" />
+            </FrameLayout>
+            
+            <RelativeLayout
+                android:paddingLeft="@dimen/setting_cell_padding"
+                android:paddingRight="@dimen/setting_cell_padding"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_cell_height">
+
+                <!-- 로그인 전 -->
+                <ImageView
+                    android:src="@drawable/setting_myinfo_login_txt"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/setting_myinfo_login_txt"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:src="@drawable/setting_btn_login"
+                    android:background="@android:color/transparent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/setting_myinfo_login_button"
+                    android:visibility="gone" />
+
+                <!-- 로그인 후 -->
+                <TextView
+                    android:text="neowiz@neowiz.com"
+                    android:textSize="@dimen/setting_login_textsize"
+                    android:textColor="@color/setting_txt_color"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/setting_myinfo_id" />
+
+                <ImageButton
+                    android:src="@drawable/setting_btn_logout"
+                    android:background="@android:color/transparent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/setting_myinfo_logout_button" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/setting_tab_color"
+                android:paddingLeft="@dimen/setting_tap_padding"
+                android:paddingRight="@dimen/setting_tap_padding"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_tap_height">
+
+                <ImageView
+                    android:src="@drawable/setting_notice_title"
+                    android:background="@android:color/transparent"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                
+                <CheckBox
+                    android:button="@drawable/setting_checkbox"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:id="@+id/setting_myinfo_alarm_checkbox" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/setting_cell_padding"
+                android:paddingRight="@dimen/setting_cell_padding"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_cell_height">
+
+                <ImageView
+                    android:src="@drawable/setting_notice_event_txt"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:button="@drawable/setting_checkbox"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:id="@+id/setting_myinfo_eventreward_checkbox" />
+            </RelativeLayout>
+
+            <View
+                android:background="@color/setting_cell_split_color"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/setting_cell_padding"
+                android:paddingRight="@dimen/setting_cell_padding"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_cell_height">
+
+                <ImageView
+                    android:src="@drawable/setting_notice_update_txt"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:button="@drawable/setting_checkbox"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:id="@+id/setting_myinfo_gameupdate_checkbox" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:background="@color/setting_tab_color"
+                android:paddingLeft="@dimen/setting_tap_padding"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_tap_height">
+
+                <ImageView
+                    android:src="@drawable/setting_customerservice_title"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_version_cell"
+                android:clickable="true"
+                android:paddingLeft="@dimen/setting_cell_padding"
+                android:paddingRight="@dimen/setting_cell_padding"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_cell_height">
+
+                <ImageView
+                    android:id="@+id/setting_version_title"
+                    android:src="@drawable/setting_customerservice_version_txt"
+                    android:layout_marginRight="11dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="@string/app_ver"
+                    android:textColor="@color/setting_txt_color"
+                    android:textSize="@dimen/setting_version_textsize"
+                    android:layout_toRightOf="@+id/setting_version_title"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/setting_support_versioninfo_txt" />
+
+                <ImageView
+                    android:id="@+id/setting_version_cellstate"
+                    android:src="@drawable/setting_cell_off"
+                    android:padding="11dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@drawable/common_new"
+                    android:layout_toLeftOf="@+id/setting_version_cellstate"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/setting_support_new_icon" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_version_detail"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="#7F000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"/>
+
+                <View
+                    android:background="@color/setting_cell_split_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/setting_version_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:paddingLeft="28dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:paddingTop="7.5dp"
+                            android:paddingBottom="7.5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/setting_version_old_txt"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:text="@string/app_ver"
+                                android:textColor="@color/setting_txt_color"
+                                android:textSize="@dimen/setting_version_textsize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/setting_support_currentver" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:paddingTop="7.5dp"
+                            android:paddingBottom="7.5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/setting_version_new_txt"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:text="1.0.1"
+                                android:textSize="@dimen/setting_version_textsize"
+                                android:textColor="@color/setting_txt_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/setting_support_newver" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/setting_support_versioninfo_message"
+                    android:src="@drawable/setting_version_old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="17dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/setting_cell_split_color"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/setting_cell_padding"
+                android:paddingRight="@dimen/setting_cell_padding"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_cell_height"
+                android:id="@+id/setting_support_useterms">
+
+                <ImageView
+                    android:id="@+id/setting_terms_title"
+                    android:src="@drawable/setting_customerservice_terms_txt"
+                    android:layout_marginRight="11dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/setting_terms_cellstate"
+                    android:src="@drawable/setting_cell_off"
+                    android:padding="11dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <View
+                android:background="@color/setting_cell_split_color"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/setting_cell_padding"
+                android:paddingRight="@dimen/setting_cell_padding"
+                android:layout_marginBottom="@dimen/menu_height"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_cell_height">
+
+                <ImageView
+                    android:id="@+id/setting_customercenter_title"
+                    android:src="@drawable/setting_customerservice_customercenter_txt"
+                    android:layout_marginRight="11dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

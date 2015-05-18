@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/news_padding"
+    android:paddingRight="@dimen/news_padding"
+    android:paddingTop="@dimen/news_listitme_paddingtop"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/news_listitem_height">
+
+        <LinearLayout
+            android:id="@+id/news_item_title_container"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:layout_marginRight="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/news_item_title"
+                android:text="A.V.A  VIP 카드 배송 관련 안내 입니다 우하하하"
+                android:textColor="@color/news_list_title"
+                android:textSize="@dimen/news_listitem_title_textsize"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/news_item_desc"
+            android:layout_below="@+id/news_item_title_container"
+            android:text="가장 최신 소식은 좀 더 강조해 줍니다. 아웃링크는 ‘자세히 보기+아웃링크아이콘’으로 수정/구성합니다."
+            android:lines="2"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="@dimen/news_listitem_sub_textsize"
+            android:textColor="@color/news_list_sub"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/news_item_date"
+            android:text="14.11.10"
+            android:textSize="@dimen/news_listitem_date_textsize"
+            android:textColor="@color/news_list_date"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/news_item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/news_btn_news_detail"
+            android:layout_alignTop="@+id/news_item_date"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_link" />
+
+        <ImageView
+            android:src="@drawable/news_btn_news_delete"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_list_item_close" />
+
+</RelativeLayout>

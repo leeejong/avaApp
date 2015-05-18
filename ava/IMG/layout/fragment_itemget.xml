@@ -1,0 +1,198 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.neowiz.pmang.avasupplysection.ItemgetFragment">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/item_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/main_item_bg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/main_item_effect_light"
+                    android:src="@drawable/main_item_effect_light"
+                    android:alpha="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/main_item_effect_glow"
+                    android:src="@drawable/main_item_effect_glow"
+                    android:alpha="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/main_item_txt"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/main_item_name_color"
+                        android:lines="1"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginBottom="19dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <RelativeLayout
+                        android:id="@+id/main_item_cotainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/main_item_back_bg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/main_item_img"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="@dimen/main_item_img_size"
+                            android:layout_height="@dimen/main_item_img_size" />
+
+                        <ImageView
+                            android:src="@drawable/main_item_front_bg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/main_item_subtxt"
+                        android:text=""
+                        android:gravity="center"
+                        android:textColor="@color/main_item_desc_color"
+                        android:textSize="13sp"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageButton
+                        android:id="@+id/main_item_button"
+                        android:src="@drawable/main_log_out"
+                        android:background="@drawable/main_item_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickHandler"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_below="@+id/item_area"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="@dimen/menu_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/bonus_title"
+                    android:src="@drawable/main_bonus_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/bonus_icon_container"
+                    android:gravity="center"
+                    android:layout_below="@+id/bonus_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/main_bonus_box1"
+                        android:src="@drawable/main_bonus_today_icon_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/main_bonus_arrow1"
+                        android:src="@drawable/main_bonus_arrow_off"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/main_bonus_box2"
+                        android:src="@drawable/main_bonus_today_icon_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/main_bonus_arrow2"
+                        android:src="@drawable/main_bonus_arrow_off"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/main_bonus_box3"
+                        android:src="@drawable/main_bonus_today_icon_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginBottom="-15dp"
+                    android:layout_marginLeft="253dp"
+                    android:layout_alignBottom="@+id/bonus_icon_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/bonus_icon"
+                        android:src="@drawable/main_bonus_icon_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_below="@+id/bonus_icon_container"
+                    android:src="@drawable/main_bonus_desc"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

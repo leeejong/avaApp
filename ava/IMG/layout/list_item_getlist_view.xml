@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/getlist_listitem_height">
+
+        <TextView
+            android:id="@+id/getlist_item_name"
+            android:text="A.V.A m16a2 once"
+            android:gravity="center"
+            android:textSize="@dimen/getlist_listitem_textsize"
+            android:textColor="@color/getlist_list_textcolor"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/getlist_item_type"
+            android:text="데일리아이템"
+            android:gravity="center"
+            android:textSize="@dimen/getlist_listitem_textsize"
+            android:textColor="@color/getlist_list_textcolor"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/getlist_item_date"
+            android:text="2016.01.02"
+            android:gravity="center"
+            android:textSize="@dimen/getlist_listitem_textsize"
+            android:textColor="@color/getlist_list_textcolor"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>
