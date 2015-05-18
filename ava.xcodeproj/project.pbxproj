@@ -11,7 +11,7 @@
 		1D94C37C1B01B9EE00CCE2B1 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D94C37B1B01B9EE00CCE2B1 /* HistoryTableViewCell.swift */; };
 		1D94C37E1B02127F00CCE2B1 /* avaNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D94C37D1B02127F00CCE2B1 /* avaNavigationViewController.swift */; };
 		1DA648F11AFB308500970B76 /* uselessCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA648F01AFB308500970B76 /* uselessCodes.swift */; };
-		1DA6D77F1B02E8A400D00E72 /* 01 복사본.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA6D77E1B02E8A400D00E72 /* 01 복사본.png */; };
+		1DA6D77F1B02E8A400D00E72 /* SplashActivity.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA6D77E1B02E8A400D00E72 /* SplashActivity.png */; };
 		1DB1B89D1AEF7AB300F326E3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1B89C1AEF7AB300F326E3 /* LoginViewController.swift */; };
 		1DB1B89F1AF5E96D00F326E3 /* GetlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1B89E1AF5E96D00F326E3 /* GetlistView.swift */; };
 		1DB1B9011AF5EFBC00F326E3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1B9001AF5EFBC00F326E3 /* LoginView.swift */; };
@@ -170,7 +170,7 @@
 		1D94C37B1B01B9EE00CCE2B1 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		1D94C37D1B02127F00CCE2B1 /* avaNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = avaNavigationViewController.swift; sourceTree = "<group>"; };
 		1DA648F01AFB308500970B76 /* uselessCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = uselessCodes.swift; path = ../uselessCodes.swift; sourceTree = "<group>"; };
-		1DA6D77E1B02E8A400D00E72 /* 01 복사본.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01 복사본.png"; sourceTree = "<group>"; };
+		1DA6D77E1B02E8A400D00E72 /* SplashActivity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SplashActivity.png; path = ../workspace/ava/ava/SplashActivity.png; sourceTree = "<group>"; };
 		1DB1B89C1AEF7AB300F326E3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1DB1B89E1AF5E96D00F326E3 /* GetlistView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetlistView.swift; sourceTree = "<group>"; };
 		1DB1B9001AF5EFBC00F326E3 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -363,7 +363,6 @@
 				1DA648F01AFB308500970B76 /* uselessCodes.swift */,
 				1DB1B9041AF610E700F326E3 /* GetlistTableViewController.swift */,
 				1D94C37B1B01B9EE00CCE2B1 /* HistoryTableViewCell.swift */,
-				1DA6D77E1B02E8A400D00E72 /* 01 복사본.png */,
 				1D94C37D1B02127F00CCE2B1 /* avaNavigationViewController.swift */,
 				1DB1B89C1AEF7AB300F326E3 /* LoginViewController.swift */,
 				1DC059C21AEDDB4A00C0E1B4 /* AppDelegate.swift */,
@@ -408,6 +407,7 @@
 		1DC059E41AEDDB8700C0E1B4 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				1DA6D77E1B02E8A400D00E72 /* SplashActivity.png */,
 				1DC059E51AEDDB8700C0E1B4 /* bonus_bg.png */,
 				1DC059E61AEDDB8700C0E1B4 /* bonus_box_a_dimed.png */,
 				1DC059E71AEDDB8700C0E1B4 /* bonus_box_a_normal.png */,
@@ -669,7 +669,7 @@
 				1DC05A8E1AEDDB8800C0E1B4 /* login_terms_btn.png in Resources */,
 				1DC05A821AEDDB8800C0E1B4 /* login_btn_pwfind.png in Resources */,
 				1DC05AB91AEDDB8800C0E1B4 /* popup_btn_confirm_bg.9.png in Resources */,
-				1DA6D77F1B02E8A400D00E72 /* 01 복사본.png in Resources */,
+				1DA6D77F1B02E8A400D00E72 /* SplashActivity.png in Resources */,
 				1DC05A691AEDDB8800C0E1B4 /* bonus_box_b_dimed.png in Resources */,
 				1DC05A801AEDDB8800C0E1B4 /* login_btn_login.png in Resources */,
 				1DC05A721AEDDB8800C0E1B4 /* bonus_item_line_effect.png in Resources */,
